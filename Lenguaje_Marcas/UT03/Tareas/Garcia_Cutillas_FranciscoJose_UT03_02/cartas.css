@@ -1,0 +1,45 @@
+#as_espadas{
+    position: fixed;    
+    left: 150px;
+    top: 150px;
+    z-index: 0;
+}
+#as_espadas1{
+    position: fixed;
+    left: 540px;
+    top: 50px;
+    z-index: 0;
+}
+#as_oros{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    z-index: -1;
+}
+#as_oros1{
+    position: fixed;
+    left: 620px;
+    top: 130px;
+    z-index: -1;
+}
+#sota_bastos{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: -2;
+}
+#sota_bastos1{
+    position: fixed;
+    left: 570px;
+    top: 80px;
+    z-index: -2;
+}
+#tres_bastos{
+    position: fixed;
+    z-index: -3;
+}
+#tres_bastos1{
+    position: fixed;
+    left: 500px;
+    z-index: -3;
+}

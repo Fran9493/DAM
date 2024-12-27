@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa dedicada a la fabricación y venta de prefabricados de hormigón">
+    <meta name="keywords" content="Bloque, prefabricado, hormigón">
+    <meta name="author" content="Francisco José García Cutillas">
+    <title>Prefabricados bloquemanía</title>
+    <style>
+        body{
+            background-color: rgb(199, 199, 186);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .encabezado{
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        header{
+            background-color: white;
+            text-align: center;
+        }
+
+        footer{            
+            text-align: center;
+            background-color: blanchedalmond;
+            padding-right: 25px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(64, 125, 240);
+        }
+
+        a:hover{
+            color: rgb(17, 89, 223);
+        }
+
+        a:active{
+            color: orange;
+        }
+
+        fieldset{
+            font-weight: bold;
+        }
+
+        legend{
+            font-size: larger;
+        }
+
+        .direccion{
+            padding-right: 30px;
+        }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.JPG" alt="Logo de la empresa" width="350px">
+        
+    </header>
+    <nav>
+        <table>
+            <tr>
+                <td class="encabezado"><a href="garcia_cutillas_index.html">Inicio</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_quienesSomos.html">Quiénes somos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_productos.html">Productos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_AltaNuevoCliente.html">Alta nuevo cliente</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_pedidos.html">Pedidos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_contacto.html">Contacto</a></td>
+            </tr>
+        </table>
+    </nav><br>
+
+    <form>
+        <fieldset>
+            <legend>Alta nuevo cliente:</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" autofocus required><br><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+            <label for="fechaNac">Fecha de nacimiento:</label><br>
+            <input type="date" id="fechaNac" name="fechaNac"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="passwd">Contraseña:</label><br>
+            <input type="password" id="passwd" name="passwd" title="Mínimo 8 caracteres" min="8" required><br><br>
+            <label for="passwd1">Repite contraseña:</label><br>
+            <input type="password" id="passwd1" name="passwd1" title="Mínimo 8 caracteres" min="8" required><br><br>
+            <label for="nif">NIF:</label><br>
+            <input type="text" id="nif" name="nif" pattern="(\d{8})([A-Z]{1})" maxlength="10" placeholder="11111111A" required><br><br>
+            <label for="fotoNif">Foto NIF</label><br>
+            <input type="file" id="fotoNif" name="fotoNif" required><br><br>
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" id="telefono" pattern="[0-9]{9}" maxlength="9" required><br><br>
+            <h3>Dirección</h3>
+            <table>
+                <tr>                    
+                    <td class="direccion"><label for="tipoVia">Tipo de vía</label></td>
+                    <td class="direccion"><label for="nombreVia">Nombre de la vía</label></td>
+                    <td class="direccion"><label for="codPostal">Código postal</label></td>
+                    <td class="direccion"><label for="provincia">Provincia</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="calle" name="tipoVia" value="Calle">
+                        <label for="calle">Calle</label>                        
+                    </td>
+                    <td rowspan="3"><input type="text" id="nombreVia" name="nombreVia" required></td>
+                    <td rowspan="3"><input type="text" id="codPostal" name="codPostal" size="10px" required></td>
+                    <td rowspan="3">
+                        <select id="selectProvincia" name="selProvincia">
+                            <option value="alava">Álava</option>
+                            <option value="albacete">Albacete</option>
+                            <option value="alicante">Alicante</option>
+                            <option value="almeria">Almería</option>
+                            <option value="asturias">Asturias</option>
+                            <option value="avila">Ávila</option>
+                            <option value="badajoz">Badajoz</option>
+                            <option value="barcelona">Barcelona</option>
+                            <option value="burgos">Burgos</option>
+                            <option value="caceres">Cáceres</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="cantabria">Cantabria</option>
+                            <option value="castellon">Castellón</option>
+                            <option value="ceuta">Ceuta</option>
+                            <option value="ciudadreal">Ciudad Real</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="cuenca">Cuenca</option>
+                            <option value="girona">Girona</option>
+                            <option value="granada">Granada</option>
+                            <option value="guadalajara">Guadalajara</option>
+                            <option value="guipuzcoa">Guipúzcoa</option>
+                            <option value="huelva">Huelva</option>
+                            <option value="huesca">Huesca</option>
+                            <option value="illesbalears">Illes Balears</option>
+                            <option value="jaen">Jaén</option>
+                            <option value="larioja">La Rioja</option>
+                            <option value="laspalmas">Las Palmas</option>
+                            <option value="leon">León</option>
+                            <option value="lleida">Lleida</option>
+                            <option value="lugo">Lugo</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="malaga">Málaga</option>
+                            <option value="melilla">Melilla</option>
+                            <option value="murcia">Murcia</option>
+                            <option value="navarra">Navarra</option>
+                            <option value="ourense">Ourense</option>
+                            <option value="palencia">Palencia</option>
+                            <option value="pontevedra">Pontevedra</option>
+                            <option value="salamanca">Salamanca</option>
+                            <option value="segovia">Segovia</option>
+                            <option value="sevilla">Sevilla</option>
+                            <option value="soria">Soria</option>
+                            <option value="tarragona">Tarragona</option>
+                            <option value="santacruztenerife">Santa Cruz de Tenerife</option>
+                            <option value="teruel">Teruel</option>
+                            <option value="toledo">Toledo</option>
+                            <option value="valencia">Valencia</option>
+                            <option value="valladolid">Valladolid</option>
+                            <option value="vizcaya">Vizcaya</option>
+                            <option value="zamora">Zamora</option>
+                            <option value="zaragoza">Zaragoza</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="avenida" name="tipoVia" value="Avenida">
+                        <label for="avenida">Avenida</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="camino" name="tipoVia" value="Camino">
+                        <label for="camino">Camino</label>
+                    </td>
+                </tr>
+            </table><br>
+            <input type="submit" value="Registro">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>Página web creada por Francisco José García Cutillas</p>
+    </footer>
+</body>
+</html>

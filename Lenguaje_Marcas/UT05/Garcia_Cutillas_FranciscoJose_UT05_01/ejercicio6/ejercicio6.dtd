@@ -1,0 +1,35 @@
+<!ELEMENT videoclub (facturas)>
+    <!ELEMENT facturas (factura*)>
+        <!ELEMENT factura (datosCliente, datosTicket)>
+            <!ELEMENT datosCliente (nombreCliente, apellidosCliente, dni, telefono)>
+                <!ATTLIST datosCliente id ID #REQUIRED>
+                <!ELEMENT nombreCliente (#PCDATA)>
+                <!ELEMENT apellidosCliente (#PCDATA)>
+                <!ELEMENT dni (#PCDATA)>
+                <!ELEMENT telefono (#PCDATA)>
+            <!ELEMENT datosTicket (resguardo, alquileres?, compras?)>
+                <!ELEMENT resguardo (formaPago, importeTotal)>
+                    <!ELEMENT formaPago (#PCDATA)>
+                    <!ELEMENT importeTotal (#PCDATA)>
+                <!ELEMENT alquileres (pelicula*)>
+                    <!ATTLIST alquileres fechaDevolucion CDATA #REQUIRED>
+                    <!ELEMENT pelicula (titulo, genero, duracion, actores, caratula?)>
+                        <!ATTLIST pelicula idPelicula CDATA #REQUIRED>
+                        <!ATTLIST pelicula valoracion CDATA #REQUIRED>
+                        <!ELEMENT titulo (#PCDATA)>
+                        <!ELEMENT genero (#PCDATA)>
+                        <!ELEMENT duracion (#PCDATA)>
+                        <!ELEMENT actores (actor1, actor2, actor3)>
+                            <!ELEMENT actor1 (#PCDATA)>
+                            <!ELEMENT actor2 (#PCDATA)>
+                            <!ELEMENT actor3 (#PCDATA)>
+                        <!ELEMENT caratula (#PCDATA)>
+                            <!ATTLIST caratula url CDATA #IMPLIED>
+                <!ELEMENT compras (dvd*, cintaVideo*)>
+                    <!ELEMENT dvd (tituloDvd, fechaSalida, extras)>
+                        <!ELEMENT tituloDvd (#PCDATA)>
+                        <!ELEMENT fechaSalida (#PCDATA)>
+                        <!ELEMENT extras (#PCDATA)>
+                    <!ELEMENT cintaVideo (formato, rebobinada)>
+                        <!ELEMENT formato (#PCDATA)>
+                        <!ELEMENT rebobinada (#PCDATA)>

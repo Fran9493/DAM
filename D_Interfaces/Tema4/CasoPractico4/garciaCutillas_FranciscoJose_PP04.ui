@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Datos personales</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelNombre">
+          <property name="text">
+           <string>&amp;Nombre</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditNombre</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEditNombre"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelApellidos">
+          <property name="text">
+           <string>&amp;Apellidos</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditApellidos</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEditApellidos"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelDireccion">
+          <property name="text">
+           <string>&amp;Dirección</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditDireccion</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEditDireccion"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Preferred</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelDNI">
+          <property name="text">
+           <string>&amp;DNI</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditDNI</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEditDNI"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelTelefono">
+          <property name="text">
+           <string>&amp;Teléfono</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditTelefono</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEditTelefono"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelCorreo">
+          <property name="text">
+           <string>&amp;Correo</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEditCorreo</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEditCorreo"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButtonAceptar">
+        <property name="text">
+         <string>Aceptar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>439</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditNombre</tabstop>
+  <tabstop>lineEditDNI</tabstop>
+  <tabstop>lineEditApellidos</tabstop>
+  <tabstop>lineEditTelefono</tabstop>
+  <tabstop>lineEditDireccion</tabstop>
+  <tabstop>lineEditCorreo</tabstop>
+  <tabstop>pushButtonAceptar</tabstop>
+  <tabstop>pushButtonCancelar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

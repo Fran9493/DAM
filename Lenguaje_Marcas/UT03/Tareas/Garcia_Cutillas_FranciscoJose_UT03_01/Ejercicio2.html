@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum</title>
+    <link rel="stylesheet" href="Ejercicio2_estilo.css">
+</head>
+<body>
+
+    <h1>Rellena tu CV</h1>
+
+    <form action="/gestion.php">
+        <fieldset>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+        </fieldset>
+        <label for="pass">Contraseña:</label><br>
+        <input type="password" id="pass" name="pass" required><br>
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni" required> <br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+        <input type="text" id="cv_lm" name="cv_lm" value="CV-LM" readonly required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" multiple required><br>
+        <label for="anosActivo">Años en activo</label><br>
+        <input type="number" id="anosActivo" name="anosActivo" min="0" max="50" required><br>
+
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" id="sexoH" name="sexo" value="Hombre" required>
+        <label for="sexoH">Hombre</label><br>
+        <input type="radio" id="sexoM" name="sexo" value="Mujer" required>
+        <label for="sexoM">Mujer</label><br><br>
+        <label for="foto">Incluir mi foto</label>
+        <input type="text" id="foto" name="foto">
+        <button type="button" id="botonElegir" name="botonElegir">Elegir...</button><br><br>
+        <input type="checkbox" id="suscribir" name="suscribir" checked>
+        <label for="suscribir">Suscribirme al boletín de novedades</label><br><br>
+        <button type="submit" id="botonGuardar" name="botonGuardar">Guardar cambios</button>
+        <button type="reset" id="botonReset" name="botonReset">Borrar los datos introducidos</button>
+    </form>
+    
+</body>
+</html>

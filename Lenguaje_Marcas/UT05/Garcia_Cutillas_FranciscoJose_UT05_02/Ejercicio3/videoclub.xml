@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videoclub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:noNamespaceSchemaLocation="videoclub.xsd">
+    <factura>
+        <datosCliente id="c1">
+            <nombreCliente>Evaristo</nombreCliente>
+            <apellidosCliente>Valcárcel Cáceres</apellidosCliente>
+            <dni>25114585T</dni>
+            <telefono>685444585</telefono>
+        </datosCliente>
+        <datosTicket>
+            <resguardo>
+                <formaPago>Efectivo</formaPago>
+                <importeTotal>53.25</importeTotal>
+            </resguardo>
+            <alquileres fechaDevolucion="25-04-2024">
+                <pelicula idPelicula="p2254" valoracion="7.2">
+                    <titulo>Avatar</titulo>
+                    <genero>Ciencia ficción</genero>
+                    <duracion>161</duracion>
+                    <actores>
+                        <actor>Sam Worthington</actor>
+                        <actor>Zoe Saldana</actor>
+                        <actor>Sigourney Weaver</actor>
+                    </actores>
+                </pelicula>
+                <pelicula idPelicula="p3521" valoracion="7.0">
+                    <titulo>Shrek 2</titulo>
+                    <genero>Animación</genero>
+                    <duracion>93</duracion>
+                    <actores>
+                        <actor>Antonio Banderas</actor>
+                        <actor>Eddie Murphy</actor>
+                        <actor>Cameron Diaz</actor>
+                    </actores>
+                    <caratula url="caratulas/c0360.jpg"/>
+                </pelicula>
+            </alquileres>
+            <compras>
+                <dvd>
+                    <tituloDvd>Titanic</tituloDvd>
+                    <fechaSalida>31-08-1999</fechaSalida>
+                    <extras>Sí</extras>
+                </dvd>
+                <cintaVideo>
+                    <formato>VHS</formato>
+                    <rebobinada>No</rebobinada>
+                </cintaVideo>
+            </compras>
+        </datosTicket>
+    </factura>
+    <factura>
+        <datosCliente id="c2">
+            <nombreCliente>Ana María</nombreCliente>
+            <apellidosCliente>Velázquez Pozo</apellidosCliente>
+            <dni>33554484A</dni>
+            <telefono>685224587</telefono>
+        </datosCliente>
+        <datosTicket>
+            <resguardo>
+                <formaPago>Tarjeta</formaPago>
+                <importeTotal>32.50</importeTotal>
+            </resguardo>
+            <alquileres fechaDevolucion="15-03-2024">
+                <pelicula idPelicula="p5452" valoracion="6.8">
+                    <titulo>Harry Potter y la Piedra Filosofal</titulo>
+                    <genero>Fantástico</genero>
+                    <duracion>152</duracion>
+                    <actores>
+                        <actor>Daniel Radcliffe</actor>
+                        <actor>Rupert Grint</actor>
+                        <actor>Emma Watson</actor>
+                    </actores>
+                    <caratula url="caratulas/c0437.jpg"/>
+                </pelicula>                    
+            </alquileres>
+            <compras>
+                <dvd>
+                    <tituloDvd>	Buscando a Nemo</tituloDvd>
+                    <fechaSalida>12-06-2013</fechaSalida>
+                    <extras>No</extras>
+                </dvd>
+            </compras>            
+        </datosTicket>
+    </factura>
+    <factura>
+        <datosCliente id="c3">
+            <nombreCliente>Eva</nombreCliente>
+            <apellidosCliente>Gomariz Carrillo</apellidosCliente>
+            <dni>43254415D</dni>
+            <telefono>669545221</telefono>
+        </datosCliente>
+        <datosTicket>
+            <resguardo>
+                <formaPago>Efectivo</formaPago>
+                <importeTotal>35.23</importeTotal>
+            </resguardo>                
+            <compras>
+                <dvd>
+                    <tituloDvd>Star Wars: Episodio III - La Venganza de los Sith</tituloDvd>
+                    <fechaSalida>02-11-2005</fechaSalida>
+                    <extras>Sí</extras>
+                </dvd>
+                <cintaVideo>
+                    <formato>S-VHS</formato>
+                    <rebobinada>Sí</rebobinada>
+                </cintaVideo>
+            </compras>
+        </datosTicket>
+    </factura>
+    <factura>
+        <datosCliente id="c4">
+            <nombreCliente>José</nombreCliente>
+            <apellidosCliente>Martínez Muñoz</apellidosCliente>
+            <dni>29854458S</dni>
+            <telefono>656584523</telefono>
+        </datosCliente>
+        <datosTicket>
+            <resguardo>
+                <formaPago>Tarjeta</formaPago>
+                <importeTotal>25.99</importeTotal>
+            </resguardo>
+            <alquileres fechaDevolucion="08-02-2024">
+                <pelicula idPelicula="p4521" valoracion="5.2">
+                    <titulo>Transformers: La Venganza de los Caídos</titulo>
+                    <genero>Ciencia ficción</genero>
+                    <duracion>150</duracion>
+                    <actores>
+                        <actor>Shia LaBeouf</actor>
+                        <actor>Megan Fox</actor>
+                        <actor>Tyrese Gibson</actor>
+                    </actores>
+                </pelicula>
+                <pelicula idPelicula="p1542" valoracion="8.0">
+                    <titulo>Inception</titulo>
+                    <genero>Ciencia Ficción</genero>
+                    <duracion>148</duracion>
+                    <actores>
+                        <actor>Leonardo DiCaprio</actor>
+                        <actor>Joseph Gordon-Levitt</actor>
+                        <actor>Cillian Murphy</actor>
+                    </actores>
+                    <caratula url="caratulas/c1201.jpg"/>
+                </pelicula>
+            </alquileres>
+        </datosTicket>
+    </factura>
+</videoclub>

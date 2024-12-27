@@ -1,0 +1,69 @@
+{
+    "personas": [
+        {
+            "nombre": "Evaristo",
+            "apellidos": "Muñoz Mondéjar",
+            "fechaNacimiento": "08/05/1963",
+            "edad": 60,
+            "direccion": [
+                {
+                    "tipo": "secundaria",
+                    "nombre": "falsa",
+                    "numero": 123,
+                    "ampliacion": "planta baja"
+                },
+                {
+                    "tipo": "principal",
+                    "nombre": "Mayor",
+                    "numero": 1,
+                    "ampliacion": "escalera derecha"
+                }
+            ],
+            "poblacion": "Elche",
+            "provincia": "Alicante",
+            "idiomas": [
+                "inglés",
+                "francés"
+            ]
+        },
+        {
+            "nombre": "Candelaria",
+            "apellidos": "Rodríguez Giménez",
+            "fechaNacimiento": "12/08/1968",
+            "edad": 55,
+            "direccion": [
+                {
+                    "tipo": "principal",
+                    "nombre": "barcelona",
+                    "numero": 23,
+                    "ampliacion": "1ºE"
+                }
+            ],
+            "poblacion": "Tobarra",
+            "provincia": "Albacete",
+            "idiomas": [
+                "italiano"
+            ]
+        },
+        {
+            "nombre": "Miroslav",
+            "apellidos": "Lukaschenko Ivanovich",
+            "fechaNacimiento": "25/12/1983",
+            "edad": 40,
+            "direccion": [
+                {
+                    "tipo": "secundaria",
+                    "nombre": "quinto pino",
+                    "numero": 25,
+                    "ampliacion": "sótano"
+                }
+            ],
+            "poblacion": "Los infiernos",
+            "provincia": "Murcia",
+            "idiomas": [
+              "ruso",
+              "búlgaro"  
+            ]
+        }
+    ]
+}

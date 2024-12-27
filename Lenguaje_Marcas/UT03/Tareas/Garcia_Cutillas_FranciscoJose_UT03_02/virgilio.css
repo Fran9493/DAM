@@ -1,0 +1,38 @@
+.intro{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.latin{
+    text-align: left;
+    font-family: 'Lobster';
+    font-weight: bold;
+}
+.espanol{
+    text-align: right;
+    font-family: 'Just Another Hand';
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: 'Ribeye Marrow';
+    src: url(citas-virgilio-web-fonts-plantilla/ribeye-marrow.woff2);
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url(citas-virgilio-web-fonts-plantilla/lobster.woff2);
+}
+@font-face {
+    font-family: 'Just Another Hand';
+    src: url(citas-virgilio-web-fonts-plantilla/just-another-hand.woff2);
+}
+.titulo{
+    font-family: 'Ribeye Marrow';
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+body{
+    background-color: rgb(221, 166, 95);
+}

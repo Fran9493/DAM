@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 5
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de tipos simples-->
+    <!-- Número-->
+    <xsd:simpleType name="numeroType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="250"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipo-->
+    <xsd:simpleType name="tipoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Calle"/>
+            <xsd:enumeration value="Avenida"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Nombre-->
+    <xsd:simpleType name="nombreType">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="150"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Definición de tipos complejos-->
+    <!-- Dirección-->
+    <xsd:complexType name="direccionType">
+        <xsd:sequence>
+            <xsd:element name="tipo" type="tipoType"/>
+            <xsd:element name="nombre" type="nombreType"/>
+            <xsd:element name="numero" type="numeroType"/>
+            <xsd:element name="poblacion" type="poblacionType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Población-->
+    <xsd:complexType name="poblacionType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="ciudad" fixed="Murcia"/>
+            </xsd:extension>
+        </xsd:simpleContent>        
+    </xsd:complexType>
+
+    <!-- Alumno-->
+    <xsd:complexType name="alumnoType">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="nombreType"/>
+            <xsd:element name="direccion" type="direccionType" maxOccurs="2"/>
+            <xsd:element name="telefono" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="dni" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <!-- Alumnos-->
+    <xsd:complexType name="alumnosType">
+        <xsd:sequence>
+            <xsd:element name="alumno" type="alumnoType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Instancia del elemento alumnos-->
+    <xsd:element name="alumnos" type="alumnosType"></xsd:element>
+
+</xsd:schema>

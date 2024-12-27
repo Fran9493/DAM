@@ -1,0 +1,48 @@
+{
+    "editoriales": [
+        {
+            "nombre": "Paraninfo",
+            "direccion": "Calle José Abascal 41 (Madrid)",
+            "email": "info@paraninfo.es",
+            "paginaWeb": "www.paraninfo.es",
+            "telefono": "914463350",
+            "fax": "914585666",
+            "libros": [
+                {
+                    "titulo": "Abuelo, mándame un email",
+                    "autor": "Patricia Fuente Rico",
+                    "fecha": "05/06/2021",
+                    "ibsn": "9788428333177"
+                },
+                {
+                    "titulo": "Ciberseguridad. Manual práctico",
+                    "autor": "José Manuel Ortega Candel",
+                    "fecha": "25/09/2017",
+                    "ibsn": "9788413661162"
+                }
+            ]
+        },
+        {
+            "nombre": "Mcgraw Hill",
+            "direccion": "Calle Basauri 17 ARAVACA (Madrid).",
+            "email": "incidencias@mheducation.com",
+            "paginaWeb": "www.mheducation.es",
+            "telefono": "911803240",
+            "fax": "911803055",
+            "libros": [
+                {
+                    "titulo": "Programación multimedia y dispositivos móviles",
+                    "autor": "José Alfredo Murcia Andrés",
+                    "fecha": "25/05/2022",
+                    "ibsn": "9788448626754"
+                },
+                {
+                    "titulo": "Desarrollo de interfaces",
+                    "autor": "Javier Catalá Jiménez",
+                    "fecha": "22/05/2022",
+                    "ibsn": "9788448626747"
+                }
+            ]
+        }
+    ]
+}

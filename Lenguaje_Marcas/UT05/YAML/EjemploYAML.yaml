@@ -1,0 +1,75 @@
+llave: valor
+valor_numerico: 12
+notacion_cientifica: 1e+10
+booleano: true
+nulo: null
+llave con espacio: valor
+
+llave: "String entre comillas"
+"la llave tambien puede ir entre comillas": "valor entre comillas"
+
+bloque_literal: |
+    Este bloque se guardará tal cual, incluyendo saltos de línea.
+
+    Se continúa guardando hasta que cese la indentación.
+        Cualquier línea que tenga más indentación, mantendrá los espacios dados.
+
+bloque_doblado: >
+    En este caso, todas las líneas se guardarán como una sola literal. En este caso
+    los saltos de línea se guardarán como espacio.
+
+    Las líneas en blanco, como la anterior, se considera salto de línea.
+
+        Las líneas con mayor indentación guardan sus saltos de línea.
+        Por ejemplo estas dos líneas ocuparán dos líneas.
+
+mapa_indentado:
+    llave: valor
+    numero: 3
+    otro_mapa_indentado: 
+        llave_interna: valor_interno
+
+0.25: llave numérica
+
+?|
+    Esto es una llave
+    que tiene múltiples líneas
+: y este es su valor
+
+- Amarillo
+- Verde
+- Azul
+
+secuencia:
+    - Elemento 1
+    - Elemento 2
+    - Elemento 3
+
+secuencia_combinada:
+    - texto
+    - 5
+    - 0.6
+    - llave: valor
+
+mapa_de_json_1: {"llave": "valor"}
+mapa_de_json_2:
+    llave: valor
+
+secuencia_de_json_1: [3, 2, 1, "despegue"]
+secuencia_de_json_2:
+    - 3
+    - 2
+    - 1
+    - "despegue"
+
+set:
+    ? item1
+    ? item2
+    ? item3
+
+#Equivale a
+set2:
+    item1: null
+    item2: null
+    item3: null
+

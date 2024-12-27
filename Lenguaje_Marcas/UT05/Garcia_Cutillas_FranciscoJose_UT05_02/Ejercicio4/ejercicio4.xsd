@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 4
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de tipos simples-->
+    <!-- ID participante-->
+    <xsd:simpleType name="idPType">
+        <xsd:restriction base="xsd:ID"/>
+    </xsd:simpleType>
+
+    <!-- ID pareja-->
+    <xsd:simpleType name="idRefType">
+        <xsd:restriction base="xsd:IDREF"/>
+    </xsd:simpleType>
+
+    <!-- ID adversarios-->
+    <xsd:simpleType name="idRefsType">
+        <xsd:restriction base="xsd:IDREFS"/>
+    </xsd:simpleType>
+
+    <!-- Definición de tipos complejos-->
+    <!-- Participante-->
+    <xsd:complexType name="participanteType">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="edad" type="xsd:integer"/>
+            <xsd:element name="pais" type="xsd:string"/>
+            <xsd:element name="cabezaDeSerie" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="idP" type="idPType"/>
+        <xsd:attribute name="pareja" type="idRefType"/>
+        <xsd:attribute name="adversarios" type="idRefsType"/>
+    </xsd:complexType>
+
+    <!-- Torneo-->
+    <xsd:complexType name="torneoType">
+        <xsd:sequence>
+            <xsd:element name="participante" type="participanteType" maxOccurs="4"/>
+        </xsd:sequence>
+        <xsd:attribute name="edicion" type="xsd:integer"/>
+        <xsd:attribute name="anteriorGanador" type="idRefType"/>
+    </xsd:complexType>
+
+    <!-- Instancia del elemento torneo-->
+    <xsd:element name="torneo" type="torneoType"/>
+
+</xsd:schema>

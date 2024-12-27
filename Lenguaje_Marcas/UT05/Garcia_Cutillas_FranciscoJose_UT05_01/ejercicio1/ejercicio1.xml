@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejercicio1>
+    <ciudad>Pamplona</ciudad> <!-- Se sustituye la C mayúscula de ciudad, ya que las dos
+                                etiquetas deben de ser iguales (se discriminan mayúsculas 
+                                y minúsculas -->
+    
+    <dia>18</dia> <!-- Se sustituye "día" de la primera etiqueta por "dia". Se podría poner
+                       también con tilde, pero no es lo recomendable -->
+                       
+    <mes>6</mes> <!-- La barra de la etiqueta de cierre debe de ir delante del identificador
+                      de la misma -->
+                      
+    <ciudad>Pamplona</ciudad> <!-- La etiqueta de apertura del elemento debe de tener el mismo
+                                   nombre que la de cierre, con la única diferencia de que ésta
+                                   última debe de estar precedida de "/" -->                      
+
+    <_rojo/> <!-- Las etiquetas que se abren se deben cerrar. Si éstas no tienen contenido, se puede
+                  obviar la etiqueta de cierre "</_rojo>" escribiendo la / al final de la misma -->  
+
+    <_2colores>Rojo y naranja</_2colores> <!-- Las etiquetas no pueden empezar por número. Para ello
+                                               debemos precederlo de _ -->             
+
+    <Aficiones>Cine, Bailar, Nadar</Aficiones> <!-- Entre los símbolos <> de la etiqueta no puede
+                                                    haber espacios en blanco -->
+
+    <persona><nombre>Elsa</nombre></persona> <!-- Si un elemento está contenido dentro de otro, no
+                                                  podemos cerrarlo antes de cerrar el elemento
+                                                  contenido dentro del mismo -->
+    
+    <colorFavorito>azul</colorFavorito> <!-- Dentro de una etiqueta, al igual que en el otro caso
+                                             anterior, no puede haber espacios en blanco -->                                                                                                                       
+</ejercicio1>

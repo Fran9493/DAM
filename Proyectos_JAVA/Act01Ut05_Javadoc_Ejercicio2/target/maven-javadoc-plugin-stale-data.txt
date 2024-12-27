@@ -1,0 +1,46 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'19'
+-sourcepath
+'C:/Users/Fran/OneDrive/Documents/NetBeansProjects/GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Fran/OneDrive/Documents/NetBeansProjects/GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2 1.0-SNAPSHOT API'
+com.mycompany.garciacutilasfranciscojose_act01ut05_javadoc_ejercicio2
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\src\main\java = 1678292957059
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\allclasses-index.html = 1678299570969
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\allpackages-index.html = 1678299570970
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\constant-values.html = 1678299570951
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\copy.svg = 1678299570984
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\element-list = 1678299570940
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\help-doc.html = 1678299570982
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\index-all.html = 1678299570977
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\index.html = 1678299570979
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\jquery-ui.overrides.css = 1678299570989
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\member-search-index.js = 1678299570972
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\module-search-index.js = 1678299570970
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\overview-tree.html = 1678299570964
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\package-search-index.js = 1678299570971
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\script.js = 1678299570983
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\search-page.js = 1678299570985
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\search.html = 1678299570978
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\search.js = 1678299570985
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\stylesheet.css = 1678299570983
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\tag-search-index.js = 1678299570972
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\GarciaCutilasFranciscoJose_Act01Ut05_Javadoc_Ejercicio2\target\site\apidocs\type-search-index.js = 1678299570971

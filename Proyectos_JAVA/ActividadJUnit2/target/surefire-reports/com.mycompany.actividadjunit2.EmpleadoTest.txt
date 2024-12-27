@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.actividadjunit2.EmpleadoTest
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 0, Errors: 1, Skipped: 12, Time elapsed: 0.054 s <<< FAILURE! - in com.mycompany.actividadjunit2.EmpleadoTest
+testRegistraEntradaEmpleadoParametrizado{Integer, Integer, String, int}  Time elapsed: 0.009 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.Integer _empleado] in method [public void com.mycompany.actividadjunit2.EmpleadoTest.testRegistraEntradaEmpleadoParametrizado(java.lang.Integer,java.lang.Integer,java.lang.String,int)].
+

@@ -1,0 +1,12 @@
+<!ELEMENT libros (libro*)>
+    <!ELEMENT libro (titulo, autor, genero, anioPublicacion, editorial)>
+        <!ATTLIST libro ISBN ID #REQUIRED>
+        <!ATTLIST libro tipo CDATA #REQUIRED>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (nombre, fechaNacimiento)>
+            <!ATTLIST autor nacidoEnEspaña (SI|NO) #REQUIRED>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT fechaNacimiento (#PCDATA)>
+        <!ELEMENT genero (#PCDATA)>
+        <!ELEMENT anioPublicacion (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+    <title>Práctica Fran para el ejercicio 1</title>
+    <link>http://www.lenguajedemarcas.es</link>
+    <atom:link href="http://www.lenguajedemarcas.es/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Página de ejemplo para el ejercicio 1</description>
+    <language>es-Es</language>
+    <lastBuildDate>Mon, 18 Dec 2023 10:00 +0000</lastBuildDate>
+
+    <item>
+        <title>Explicación del lenguaje html</title>
+        <link>http://www.lenguajedemarcas.es/explicacionhtml.html</link>
+        <description>
+            Sitio en el que podrás aprender todo lo necesario sobre html.
+        </description>
+        <pubDate>Tue, 12 Dec 2023 10:00:00 +0000</pubDate>
+        <guid>
+            http://www.lenguajedemarcas.es/explicacionhtml.html
+        </guid>
+    </item>
+    <item>
+        <title>Explicación de las hojas de estilo</title>
+        <link>http://www.lenguajedemarcas.es/css.html</link>
+        <description>
+            Sitio en el que podrás descubrir todo lo relacionado con hojas de estilo css.
+        </description>
+        <pubDate>Wed, 13 Dec 2023 12:55:00 +0000</pubDate>
+        <guid>
+            http://www.lenguajedemarcas.es/css.html
+        </guid>
+    </item>
+    <item>
+        <title>Validador de xml</title>
+        <link>http://www.lenguajedemarcas.es/validador.html</link>
+        <description>
+            En este enlace podrás comprobar tu código xml.
+        </description>
+        <pubDate>Thu, 14 Dec 2023 17:08:00 +0000</pubDate>
+        <guid>
+            http://www.lenguajedemarcas.es/validador.html
+        </guid>
+    </item>
+    <item>
+        <title>Crear documentos RSS</title>
+        <link>http://www.lenguajedemarcas.es/rss.html</link>
+        <description>
+            En este sitio podrás aprender a crear tus propios documentos RSS.
+        </description>
+        <pubDate>Fri, 15 Dec 2023 10:55:00 +0000</pubDate>
+        <guid>
+            http://www.lenguajedemarcas.es/rss.html
+        </guid>
+    </item>
+    <item>
+        <title>Normas ATOM</title>
+        <link>http://www.lenguajedemarcas.es/atom.html</link>
+        <description>
+            Sitio en el que se especifican todas las normas ATOM.
+        </description>
+        <pubDate>Mon, 18 Dec 2023 20:50:00 +0000</pubDate>
+        <guid>
+            http://www.lenguajedemarcas.es/atom.html
+        </guid>
+    </item>
+
+</channel>
+</rss>

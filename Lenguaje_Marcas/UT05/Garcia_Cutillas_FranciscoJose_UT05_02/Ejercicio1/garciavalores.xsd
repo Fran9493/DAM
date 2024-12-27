@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 1
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de datos simples-->
+    <!-- Tipo mercado-abierto (sólo valores SÍ/NO) -->
+    <xsd:simpleType name="mercado-abiertoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="SÍ"/>
+            <xsd:enumeration value="NO"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipo recomendación (de 1 a 5 ambas inclusive) -->
+    <xsd:simpleType name="recomendacionType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="5"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipo día (de 1 a 31 ambos inclusive) -->
+    <xsd:simpleType name="diaType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="31"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipo mes (de 1 a 12 ambos inclusive) -->
+    <xsd:simpleType name="mesType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipo año (no se pueden introducir años anteriores a 1900) -->
+    <xsd:simpleType name="anoType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1900"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Definición de datos complejos -->
+    <!-- Fecha -->
+    <xsd:complexType name="fechaType">
+        <xsd:sequence>
+            <xsd:element name="día" type="diaType"/>
+            <xsd:element name="mes" type="mesType"/>
+            <xsd:element name="año" type="anoType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Acción -->
+    <xsd:complexType name="accionType">
+        <xsd:sequence>
+            <xsd:element name="mercado" type="xsd:string"/>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="mercado-abierto" type="mercado-abiertoType"/>
+            <xsd:element name="recomendación" type="recomendacionType"/>
+            <xsd:element name="fecha" type="fechaType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Valores -->
+    <xsd:complexType name="valoresType">
+        <xsd:sequence>
+            <xsd:element name="accion" type="accionType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Instancia del elemento valores -->
+    <xsd:element name="valores" type="valoresType"/>
+</xsd:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 5
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de tipos simples-->
+    <!-- Fecha-->
+    <xsd:simpleType name="fechaType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{2}/\d{2}/\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Nacido en España-->
+    <xsd:simpleType name="nacidoSpainType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="SI"/>
+            <xsd:enumeration value="NO"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Definición de tipos complejos-->
+    <!-- Autor-->
+    <xsd:complexType name="autorType">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="fechaNacimiento" type="fechaType"/>
+        </xsd:sequence>
+        <xsd:attribute name="nacidoEnEspaña" type="nacidoSpainType"/>
+    </xsd:complexType>
+
+    <!-- Libro-->
+    <xsd:complexType name="libroType">
+        <xsd:sequence>
+            <xsd:element name="titulo" type="xsd:string"/>
+            <xsd:element name="autor" type="autorType"/>
+            <xsd:element name="genero" type="xsd:string"/>
+            <xsd:element name="anioPublicacion" type="xsd:integer"/>
+            <xsd:element name="editorial" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="ISBN" type="xsd:string"/>
+        <xsd:attribute name="tipo" type="xsd:string"/>
+    </xsd:complexType>
+
+    <!-- Libros-->
+    <xsd:complexType name="librosType">
+        <xsd:sequence>
+            <xsd:element name="libro" type="libroType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Instancia del elemento libros-->
+    <xsd:element name="libros" type="librosType"></xsd:element>
+
+</xsd:schema>

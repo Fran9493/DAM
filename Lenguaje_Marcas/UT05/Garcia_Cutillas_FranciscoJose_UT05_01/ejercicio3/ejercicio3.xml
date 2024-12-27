@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo>
+        <nombreEquipo>F.C. Barcelona</nombreEquipo>
+        <ciudad>Barcelona</ciudad>
+        <entrenador/>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombreJugador>Ter Stegen</nombreJugador>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombreJugador>Lewandowski</nombreJugador>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombreEquipo>Atlético de Madrid</nombreEquipo>
+        <ciudad>Madrid</ciudad>
+        <entrenador/>
+        <jugadores>
+            <jugador posicion="medio">
+                <nombreJugador>Koke</nombreJugador>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombreJugador>Antoine Griezmann</nombreJugador>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos>

@@ -1,0 +1,41 @@
+body{
+    background-color: green;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: orange;    
+    text-decoration: underline; 
+    text-decoration-style: dotted;
+    font-family: Garamond, Arial, Helvetica, sans-serif;
+}
+
+p *{
+    color: violet;
+    text-decoration: underline;
+}
+
+li:nth-child(2n){
+    color: yellow;
+}
+
+li:nth-child(2n+1){
+    color: lightskyblue;
+    font-style: italic;
+}
+
+li:last-of-type{
+    color: red;
+}
+
+a[href = "https://jorgesanchez.net"]{
+    color: pink;
+    font-size: 24pt;
+}
+
+a[href *= ".net"]{
+    color: violet;
+}
+
+a[href *= "w3schools"]{
+    font-weight: bold;
+}

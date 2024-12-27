@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.mycompany.garciacutillasfranciscojose_act01ut05_javadoc.Parte2","l":"Calculadora"},{"p":"com.mycompany.garciacutilasfranciscojose_act01ut05_javadoc.Parte1","l":"EntradaBlog"}];updateSearchResults();

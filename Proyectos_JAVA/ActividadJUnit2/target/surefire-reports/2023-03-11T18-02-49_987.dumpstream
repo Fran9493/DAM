@@ -1,0 +1,12 @@
+# Created at 2023-03-11T18:02:49.987
+mar 11, 2023 6:02:49 P.�M. org.junit.jupiter.engine.discovery.MethodSelectorResolver resolve
+
+# Created at 2023-03-11T18:02:49.987
+WARNING: Possible configuration error: method [public void com.mycompany.actividadjunit2.EmpleadoTest.testRegistraEntradaEmpleadoParametrizado(java.lang.Integer,java.lang.Integer,java.lang.String,int)] resulted in multiple TestDescriptors [org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor, org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor]. This is typically the result of annotating a method with multiple competing annotations such as @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, etc.
+
+# Created at 2023-03-11T18:02:49.997
+mar 11, 2023 6:02:49 P.�M. org.junit.jupiter.engine.discovery.MethodSelectorResolver resolve
+
+# Created at 2023-03-11T18:02:49.998
+WARNING: Possible configuration error: method [public void com.mycompany.actividadjunit2.EmpleadoTest.testRegistraEntradaEmpleadoParametrizado(java.lang.Integer,java.lang.Integer,java.lang.String,int)] resulted in multiple TestDescriptors [org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor, org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor]. This is typically the result of annotating a method with multiple competing annotations such as @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, etc.
+

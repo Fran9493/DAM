@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 2
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de tipos simples -->
+    <!-- Clasificación (tp, 8, 7, 12, 18)-->
+    <xsd:simpleType name="clasificacionEdad">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="tp"/>
+            <xsd:enumeration value="8"/>
+            <xsd:enumeration value="7"/>
+            <xsd:enumeration value="12"/>
+            <xsd:enumeration value="18"/>
+        </xsd:restriction>        
+    </xsd:simpleType>
+
+    <!-- Definición de tipos complejos -->
+    <!-- Reparto -->
+    <xsd:complexType name="repartoType">
+        <xsd:sequence>
+            <xsd:element name="actor" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Película -->
+    <xsd:complexType name="peliculaType">
+        <xsd:sequence>
+            <xsd:element name="título" type="xsd:string"/>
+            <xsd:element name="título_original" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nacionalidad" type="xsd:string"/>
+            <xsd:element name="género" type="xsd:string"/>
+            <xsd:element name="clasificación" type="clasificacionType" minOccurs="0"/>
+            <xsd:element name="sin_clasificar" minOccurs="0"/>
+            <xsd:element name="sinopsis" type="xsd:string"/>
+            <xsd:element name="director" type="xsd:string"/>
+            <xsd:element name="reparto" type="repartoType"/>
+            <xsd:element name="web" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="cartel" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+        <xsd:attribute name="código" type="xsd:string" use="required"/>
+        <xsd:attribute name="duración" type="xsd:integer" use="required"/>
+        <xsd:attribute name="año" type="xsd:integer" default="2003"/>
+    </xsd:complexType>
+    
+    <!-- Clasificación -->
+    <xsd:complexType name="clasificacionType">
+        <xsd:attribute name="edad" type="clasificacionEdad"/>
+    </xsd:complexType>
+
+    <!-- Cartelera -->
+    <xsd:complexType name="carteleraType">
+        <xsd:sequence>
+            <xsd:element name="película" type="peliculaType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Instancia del elemento cartelera -->
+    <xsd:element name="cartelera" type="carteleraType"/>
+</xsd:schema>

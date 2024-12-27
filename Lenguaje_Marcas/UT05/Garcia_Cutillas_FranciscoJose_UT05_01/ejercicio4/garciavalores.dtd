@@ -1,0 +1,10 @@
+<!ELEMENT valores (accion+)>
+    <!ELEMENT accion (mercado, nombre, mercado-abierto, recomendación, fecha)>
+        <!ELEMENT mercado (#PCDATA)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT mercado-abierto (#PCDATA)>
+        <!ELEMENT recomendación (#PCDATA)>
+        <!ELEMENT fecha (día, mes, año)>
+            <!ELEMENT día (#PCDATA)>
+            <!ELEMENT mes (#PCDATA)>
+            <!ELEMENT año (#PCDATA)>

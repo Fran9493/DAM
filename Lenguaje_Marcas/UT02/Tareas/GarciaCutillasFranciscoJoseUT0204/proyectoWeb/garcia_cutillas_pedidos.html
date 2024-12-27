@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa dedicada a la fabricación y venta de prefabricados de hormigón">
+    <meta name="keywords" content="Bloque, prefabricado, hormigón">
+    <meta name="author" content="Francisco José García Cutillas">
+    <title>Prefabricados bloquemanía</title>
+    <style>
+        body{
+            background-color: rgb(199, 199, 186);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .encabezado{
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        header{
+            background-color: white;
+            text-align: center;
+        }
+
+        footer{            
+            text-align: center;
+            background-color: blanchedalmond;
+            padding-right: 25px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(64, 125, 240);
+        }
+
+        a:hover{
+            color: rgb(17, 89, 223);
+        }
+
+        a:active{
+            color: orange;
+        }
+
+        fieldset{
+            font-weight: bold;
+        }
+
+        legend{
+            font-size: larger;
+        }
+
+        .number{
+            width: 50px;
+        }
+
+        .textArea{
+            width: 500px;
+            height: 100px;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.JPG" alt="Logo de la empresa" width="350px">
+        
+    </header>
+    <nav>
+        <table>
+            <tr>
+                <td class="encabezado"><a href="garcia_cutillas_index.html">Inicio</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_quienesSomos.html">Quiénes somos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_productos.html">Productos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_AltaNuevoCliente.html">Alta nuevo cliente</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_pedidos.html">Pedidos</a></td>
+                <td class="encabezado"><a href="garcia_cutillas_contacto.html">Contacto</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <form>
+        <fieldset>
+            <legend>Nuevo pedido:</legend>
+            
+            <table>
+                <tr>
+                    <td><h3>Bloque de hormigón</h3></td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>Unidades</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbBloqueStd" name="cbBloqueStd" value="BloqueEstandar">
+                        <label for="cbBloqueStd">Bloque estándar</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undBloqueStd" name="undBloqueStd" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbBloqueCab" name="cbBloqueCab" value="BloqueCabezas">
+                        <label for="cbBloqueCab">Bloque dos cabezas lisas</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undBloqueCab" name="undBloqueCab" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbBloqueMed" name="cbBloqueMed" value="BloqueMedio">
+                        <label for="cbBloqueMed">Medio bloque</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undBloqueMed" name="undBloqueMed" class="number">
+                    </td>
+                </tr>
+                <tr>                    
+                    <td>
+                        <input type="checkbox" id="cbCol" name="cbCol" value="ColumnaSin">
+                        <label for="cbCol">Columna sin entradas</label><br>                        
+                    </td>
+                    <td>
+                        <input type="number" id="undCol" name="undCol" class="number">
+                    </td>                                        
+                </tr>
+                <tr>
+                    <td><h3>bdBlock</h3></td>
+                </tr>                
+                <tr>
+                    <td>Tipo</td>
+                    <td>Unidades</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbGeroblock" name="cbGeroblock" value="Geroblock">
+                        <label for="cbGeroblock">Geroblock</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undGeroblock" name="undGeroblock" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbBlockTabique" name="cbBlockTabique" value="BlockTabique">
+                        <label for="cbBlockTabique">Block tabique</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undBlockTabique" name="undBlockTabique" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Tierra armada</h3></td>
+                </tr>                
+                <tr>
+                    <td>Tipo</td>
+                    <td>Unidades</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbClasic" name="cbClasic" value="ClasicCrema">
+                        <label for="cbClasic">AB clasic crema</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undClasic" name="undClasic" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbJunior" name="cbJunior" value="JuniorGris">
+                        <label for="cbJunior">AB junior gris</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undJunior" name="undJunior" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Pavimentos de hormigón</h3></td>
+                </tr>                
+                <tr>
+                    <td>Tipo</td>
+                    <td>Unidades</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbRecSalmon" name="cbRecSalmon" value="RectangularSalmon">
+                        <label for="cbRecSalmon">Rectangular salmón</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undRecSalmon" name="undRecSalmon" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbTrCastano" name="cbTrCastano" value="TriefCastano">
+                        <label for="cbTrCastano">Trief castaño</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undTrCastano" name="undTrCastano" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbPerfilGris" name="cbPerfilGris" value="PerfilGris">
+                        <label for="cbPerfilGris">Perfil gris</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undPerfilGris" name="undPerfilGris" class="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cbUni" name="cbUni" value="Uni">
+                        <label for="cbUni">Uni</label><br>
+                    </td>
+                    <td>
+                        <input type="number" id="undUni" name="undUni" class="number">
+                    </td>
+                </tr>
+            </table><br><br>
+
+            <textarea name="observaciones" class="textArea">Observaciones...</textarea><br><br>
+
+            <input type="submit" value="Realizar pedido">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>Página web creada por Francisco José García Cutillas</p>
+    </footer>
+</body>
+</html>

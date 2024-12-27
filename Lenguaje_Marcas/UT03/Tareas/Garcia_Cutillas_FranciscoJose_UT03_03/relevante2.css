@@ -1,0 +1,25 @@
+body{
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+#marcDucati{
+    width: 35%;
+}
+#marcHonda{
+    width: 35%;
+}
+iframe{
+    position: relative;
+    left: 25%;
+    width: 500px;
+}
+table, th, td{
+    border: solid black 1px;
+    border-collapse: collapse ;
+    background-color: rgb(131, 255, 127);
+}
+h2{
+    padding-top: 15px;
+    color: blueviolet;
+}

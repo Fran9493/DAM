@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+    <ciudad>
+        <nombreCiudad>Madrid</nombreCiudad>
+        <paisCiudad continente="Europa">España</paisCiudad>
+    </ciudad>
+    <ciudad>
+        <nombreCiudad>París</nombreCiudad>
+        <paisCiudad continente="Europa">Francia</paisCiudad>
+    </ciudad>
+    <ciudad>
+        <nombreCiudad>Berlín</nombreCiudad>
+        <paisCiudad continente="Europa">Alemania</paisCiudad>
+    </ciudad>
+    <ciudad>
+        <nombreCiudad>Nueva Delhi</nombreCiudad>
+        <paisCiudad continente="Asia">India</paisCiudad>
+    </ciudad>
+    <ciudad>
+        <nombreCiudad>Lisboa</nombreCiudad>
+        <paisCiudad continente="Europa">Portugal</paisCiudad>
+    </ciudad>
+    <ciudad>
+        <nombreCiudad>El Cairo</nombreCiudad>
+        <paisCiudad continente="África">Egipto</paisCiudad>
+    </ciudad>
+</ciudades>

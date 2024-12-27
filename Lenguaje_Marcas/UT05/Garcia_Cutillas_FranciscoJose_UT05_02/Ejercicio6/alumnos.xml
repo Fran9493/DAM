@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="alumnos.xsd">
+    <alumno dni="11111111A">
+        <nombre>Guillermo Palazón</nombre>
+        <direccion>
+            <tipo>Avenida</tipo>
+            <nombre>Marqueses</nombre>
+            <numero>6</numero>
+            <poblacion ciudad="Murcia">Blanca</poblacion>
+        </direccion>
+        <telefono>123456789</telefono>
+    </alumno>
+    <alumno dni="22222222B">
+        <nombre>Juan Cano</nombre>
+        <direccion>
+            <tipo>Calle</tipo>
+            <nombre>Gran Vía</nombre>
+            <numero>3</numero>
+            <poblacion ciudad="Murcia">Abarán</poblacion>
+        </direccion>
+        <direccion>
+            <tipo>Avenida</tipo>
+            <nombre>Matilde Ortega</nombre>
+            <numero>14</numero>
+            <poblacion ciudad="Murcia">Cieza</poblacion>
+        </direccion>        
+    </alumno>
+</alumnos>

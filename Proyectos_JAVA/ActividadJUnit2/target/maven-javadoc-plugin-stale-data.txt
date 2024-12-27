@@ -1,0 +1,47 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/Fran/OneDrive/Documents/NetBeansProjects/ActividadJUnit2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Fran/OneDrive/Documents/NetBeansProjects/ActividadJUnit2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ActividadJUnit2 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/Fran/OneDrive/Documents/NetBeansProjects/ActividadJUnit2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'ActividadJUnit2 1.0-SNAPSHOT API'
+com.mycompany.actividadjunit2
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\src\main\java = 1645995809000
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\allclasses-index.html = 1678554567246
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\allpackages-index.html = 1678554567247
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\copy.svg = 1678554567264
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\element-list = 1678554567226
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\help-doc.html = 1678554567261
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\index-all.html = 1678554567254
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\index.html = 1678554567256
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\jquery-ui.overrides.css = 1678554567272
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\member-search-index.js = 1678554567249
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\module-search-index.js = 1678554567248
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\overview-tree.html = 1678554567240
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\package-search-index.js = 1678554567248
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\script.js = 1678554567263
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\search-page.js = 1678554567266
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\search.html = 1678554567255
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\search.js = 1678554567265
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\stylesheet.css = 1678554567262
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\tag-search-index.js = 1678554567250
+C:\Users\Fran\OneDrive\Documents\NetBeansProjects\ActividadJUnit2\target\site\apidocs\type-search-index.js = 1678554567249

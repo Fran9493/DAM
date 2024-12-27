@@ -1,0 +1,39 @@
+p::first-line{
+    text-transform: uppercase;
+}
+
+p:nth-child(even){
+    color: red;    
+}
+
+p:nth-child(3n){
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+table tr:nth-child(2n){
+    background-color: beige;
+}
+
+table tr:nth-child(2n+1){
+    background-color: aquamarine;
+}
+
+table tr:last-child{
+    font-weight: bold;
+}
+
+p::first-letter{
+    text-decoration: underline;
+}
+
+p:nth-child(4)::after{    
+    content: url('img/imagen11.jpg');    
+}
+
+p:nth-child(8)::after{
+    content: url('img/imagen21.jpg');    
+}
+
+p:nth-child(5){
+    font-style: italic;
+}

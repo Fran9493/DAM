@@ -1,0 +1,29 @@
+a:link{
+
+    color:blueviolet;
+
+}
+
+a:visited{
+
+    color:chartreuse;
+
+}
+
+a:hover{
+
+    color: blue;
+
+}
+
+a:active{
+
+    color:darkred;
+
+}
+
+p{
+
+    text-align: justify;
+
+}

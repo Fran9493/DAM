@@ -1,0 +1,29 @@
+version: "3.8"
+name: ejemployaml
+services:
+    odoo:
+        container_name: odooyaml
+        image: odoo:16
+        depends_on:
+            - db
+        ports:
+            - "8071:8069"
+        volumes:
+            - data:/var/lib/odoo
+            - .\logs:/var/log/odoo
+            - .\complementos:/mnt/extra-addons
+            - .\configuracion:/etc/odoo
+    db:
+        container_name: postgresyaml
+        image: postgres:16
+        ports:
+            - "5434:5432"
+        environment:
+            - POSTGRES_DB=postgres
+            - POSTGRES_PASSWORD=odoo
+            - POSTGRES_USER=odoo
+        volumes:
+            - postgres:/var/lib/postgresql/data
+volumes:
+    data:
+    postgres:

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.actividadjunit1.PersonaTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.075 s - in com.mycompany.actividadjunit1.PersonaTest

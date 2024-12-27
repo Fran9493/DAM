@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xml:lang="es">
+    <xsd:annotation>
+        <xsd:documentation>
+            Esquema XML que sirve para validar el XML del ejercicio 3
+            Creado por: Francisco José García Cutillas
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <!-- Definición de tipos simples -->
+    <!-- DNI(8 números del 0 al 9 y una letra mayúscula de la A a la Z -->
+    <xsd:simpleType name="dniType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{8}[A-Z]"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Teléfono(9 caracteres numéricos) -->
+    <xsd:simpleType name="telefonoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{9}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Forma de pago(Efectivo o Tarjeta)-->
+    <xsd:simpleType name="formaPagoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Efectivo"/>
+            <xsd:enumeration value="Tarjeta"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Fecha(dd-mm-aaaa)-->
+    <xsd:simpleType name="fechaType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{2}-\d{2}-\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Valoración-->
+    <xsd:simpleType name="valoracionType">
+        <xsd:restriction base="xsd:double">
+            <xsd:minInclusive value="0.0"/>
+            <xsd:maxInclusive value="10.0"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Extras(Sí/No)-->
+    <xsd:simpleType name="siNoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Sí"/>
+            <xsd:enumeration value="No"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Formato (VHS, VHS-C, S-VHS, mini DV, 8mm, Digital 8, Beta, Hi8-->
+    <xsd:simpleType name="formatoType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="VHS"/>
+            <xsd:enumeration value="VHS-C"/>
+            <xsd:enumeration value="S-VHS"/>
+            <xsd:enumeration value="Mini DV"/>
+            <xsd:enumeration value="8mm"/>
+            <xsd:enumeration value="Digital 8"/>
+            <xsd:enumeration value="Beta"/>
+            <xsd:enumeration value="Hi8"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Definición de tipos complejos-->
+    <!-- Actores-->
+    <xsd:complexType name="actoresType">
+        <xsd:sequence>
+            <xsd:element name="actor" type="xsd:string" minOccurs="3" maxOccurs="3"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Película-->
+    <xsd:complexType name="peliculaType">
+        <xsd:sequence>
+            <xsd:element name="titulo" type="xsd:string"/>
+            <xsd:element name="genero" type="xsd:string"/>
+            <xsd:element name="duracion" type="xsd:double"/>
+            <xsd:element name="actores" type="actoresType"/>
+            <xsd:element name="caratula" type="caratulaType" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="idPelicula" type="xsd:string" use="required"/>
+        <xsd:attribute name="valoracion" type="valoracionType" use="required"/>
+    </xsd:complexType>
+
+    <!-- Carátula-->
+    <xsd:complexType name="caratulaType">
+        <xsd:attribute name="url" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <!-- Alquileres-->
+    <xsd:complexType name="alquileresType">
+        <xsd:sequence>
+            <xsd:element name="pelicula" type="peliculaType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="fechaDevolucion" type="fechaType"/>
+    </xsd:complexType>
+
+    <!-- dvd-->
+    <xsd:complexType name="dvdType">
+        <xsd:sequence>
+            <xsd:element name="tituloDvd" type="xsd:string"/>
+            <xsd:element name="fechaSalida" type="fechaType"/>
+            <xsd:element name="extras" type="siNoType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Cinta vídeo-->
+    <xsd:complexType name="cintaVideoType">
+        <xsd:sequence>
+            <xsd:element name="formato" type="formatoType"/>
+            <xsd:element name="rebobinada" type="siNoType"/>            
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Compras-->
+    <xsd:complexType name="comprasType">
+        <xsd:sequence>
+            <xsd:element name="dvd" type="dvdType" minOccurs="0"/>
+            <xsd:element name="cintaVideo" type="cintaVideoType" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Resguardo-->
+    <xsd:complexType name="resguardoType">
+        <xsd:sequence>
+            <xsd:element name="formaPago" type="formaPagoType"/>
+            <xsd:element name="importeTotal" type="xsd:double"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Datos ticket-->
+    <xsd:complexType name="datosTicketType">
+        <xsd:sequence>
+            <xsd:element name="resguardo" type="resguardoType"/>
+            <xsd:element name="alquileres" type="alquileresType" minOccurs="0"/>
+            <xsd:element name="compras" type="comprasType" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Datos cliente-->
+    <xsd:complexType name="datosClienteType">
+        <xsd:sequence>
+            <xsd:element name="nombreCliente" type="xsd:string"/>
+            <xsd:element name="apellidosCliente" type="xsd:string"/>
+            <xsd:element name="dni" type="dniType"/>
+            <xsd:element name="telefono" type="telefonoType" maxOccurs="1"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <!-- Factura-->
+    <xsd:complexType name="facturaType">
+        <xsd:sequence>
+            <xsd:element name="datosCliente" type="datosClienteType"/>
+            <xsd:element name="datosTicket" type="datosTicketType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Videoclub-->
+    <xsd:complexType name="videoclubType">
+        <xsd:sequence>
+            <xsd:element name="factura" type="facturaType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Instancia de videoclub-->
+    <xsd:element name="videoclub" type="videoclubType"/>
+
+</xsd:schema>
